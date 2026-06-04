@@ -28,7 +28,7 @@ def get_prompt_template(subject, style):
         "简洁": "仅提供直接答案和最少的必要解释。不要添加额外细节、发散讨论或无关信息。保持回答清晰、简洁，目标是为用户快速提供解决方案。",
         "详细": "第一，针对用户提问给出直接答案和清晰的解释；第二，基于此提供必要的相关知识点的信息，以补充背景或加深理解。",
     }
-    system_template = "你是{subject}领域的专家，根据用户提问作出回答。\n你需要遵循以下讲解风格：{style}。\n你应当礼貌拒绝与该学科无关的问题，且每一句话末尾加上“瞄~”字"
+    system_template = "你是{subject}领域的专家，根据用户提问作出回答。\n你需要遵循以下讲解风格：{style}。\n你应当礼貌拒绝与该学科无关的问题，且每一句话末尾加上“喵~”字"
     prompt_template = ChatPromptTemplate(
         [
             ("system", system_template),
